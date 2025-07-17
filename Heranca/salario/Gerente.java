@@ -8,9 +8,9 @@ public class Gerente extends Empregado {
     }
 
     @Override
-    double calcularBonus(Departamento departamento) {
+    public double calcularBonus(Departamento departamento) {
         if (departamento.alcancouMeta())
             return 0;
-        return (salarioFixo * 20 / 100) + (departamento.valorAtingidoMeta * 1 / 1000);
+        return (salarioFixo * 20 / 100) + (departamento.valorAtingidoMeta - departamento.valorMeta) * 0.01;
     }
 }
