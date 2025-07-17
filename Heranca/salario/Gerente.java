@@ -11,6 +11,6 @@ public class Gerente extends Empregado {
     double calcularBonus(Departamento departamento) {
         if (departamento.alcancouMeta())
             return 0;
-        return salarioFixo * 20 / 100;
+        return (salarioFixo * 20 / 100) + (departamento.valorAtingidoMeta * 1 / 1000);
     }
 }
