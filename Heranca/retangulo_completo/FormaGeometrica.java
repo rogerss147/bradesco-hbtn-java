@@ -1,4 +1,3 @@
-package Heranca.retangulo_completo;
 
 public class FormaGeometrica {
     public double area() throws Exception {
