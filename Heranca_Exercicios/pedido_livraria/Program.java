@@ -1,7 +1,6 @@
 package Heranca_Exercicios.pedido_livraria;
 
 import java.util.*;
-import Heranca_Exercicios.pedido_livraria.produtos.Produto;
 
 public class Program {
     public static void main(String[] args) {
